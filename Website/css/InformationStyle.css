@@ -113,27 +113,3 @@ nav {
     top: 130px;
 }
 
-#banner {
-    height: 400px;
-    background-color: aqua;
-    position: relative;
-}
-
-#icon-left, #icon-right {
-    font-size: 70px;
-    position: absolute;
-    top: 150px;
-}
-
-#icon-left {
-    left: 10px;
-}
-
-#icon-right {
-    right: 10px;
-}
-
-.slides {
-    width: 100%;
-    height: 400px;
-}

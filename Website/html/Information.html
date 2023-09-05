@@ -4,30 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
-    <meta name="description" content="Trang chủ KigMilk">
-    <meta name="keywords" content="KigMilk, trà sữa, trang chủ">
+    <title>Giới thiệu</title>
+    <meta name="description" content="Giới thiệu KigMilk">
+    <meta name="keywords" content="KigMilk, trà sữa, giới thiệu">
     <link rel="stylesheet" href="../css/HomePageStyle.css">
     <link rel="stylesheet" href="../Fonts/fontawesome-free-6.4.2-web/css/all.min.css">
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("slides");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
-    </script>
 </head>
 
 <body>
@@ -56,19 +37,10 @@
                         <li><a href="Register.html">Đăng ký</a></li>
                     </ul>
                 </li>
+
                 </ul>
             </nav>
-            <div id="banner">
-                <div id="buttonnav">
-                    <i class="fa-solid fa-chevron-left" id="icon-left" onclick="plusDivs(-1)"></i>
-                    <i class="fa-solid fa-chevron-right" id="icon-right" onclick="plusDivs(1)"></i>
-                </div>
-                <div id="content">
-                    <img class="slides" src="../img/SingIn/Background.jpg" width="50%">
-                    <img class="slides" src="../img/SingIn/Logo.jpg" width="50%">
-                    <img class="slides" src="../img/SingIn/Logo.png" width="50%">
-                </div>
-            </div>
+          
         </div>
 
     </div>
