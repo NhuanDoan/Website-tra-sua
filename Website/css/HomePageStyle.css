@@ -1,0 +1,98 @@
+body {
+    background-image: url("../img/HomePage/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -150px;
+    padding: 0;
+    margin: 0;
+}
+
+#logo1 {
+    width: 100px;
+    height: auto;
+    border-radius: 40px;
+    padding: 15px 15px;
+}
+
+#header {
+    background-color: rgba(151,255,255,0.6);
+    height: 130px;
+}
+
+.container {
+    margin: 0px auto;
+}
+
+nav {
+    display: flex;
+    justify-items: center;
+}
+
+#main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#main-menu li a{
+    color: black;
+    font-weight: bolder;
+    display: block;
+    padding: 0px 70px;
+    line-height: 130px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#main-menu li {
+    position: relative;
+}
+
+#main-menu ul.sub-menu {
+    position: absolute;
+    background-color: rgba(151,255,255,0.6);
+    padding: 0;
+    list-style: none;
+    width: 400px;
+    display: none;
+}
+
+#main-menu ul.sub-menu a {
+    line-height: normal;
+    padding: 10px 20px;
+    margin: auto;
+    border-bottom: 1px solid green;
+}
+
+#main-menu ul.sub-menu li:hover a {
+    background-color: aqua;
+}
+
+#main-menu ul.sub-menu li:last-child a {
+    border: none;
+}
+
+#main-menu li:hover ul.sub-menu{
+    display: block;
+}
+
+#main-menu>li>a {
+    position: relative;
+}
+
+#main-menu>li>a::before {
+    content: "";
+    height: 4px;
+    width: 0%;
+    background: green;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#main-menu>li:hover>a::before {
+    width: 100%;
+}
