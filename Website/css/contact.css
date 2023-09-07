@@ -19,7 +19,7 @@ body {
 }
 
 #header {
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
     height: 130px;
     position: fixed;
     top: 0;
@@ -29,14 +29,14 @@ body {
 }
 
 .container {
-   margin: 0 auto;
-    
+    margin: 0 auto;
+
 }
 
 nav {
     display: flex;
     justify-items: center;
-    
+
 }
 
 #main-menu {
@@ -48,10 +48,10 @@ nav {
 }
 
 
-#main-menu li a{
+#main-menu li a {
     color: black;
     font-weight: bolder;
-    
+
     display: block;
     padding: 0px 70px;
     line-height: 130px;
@@ -65,13 +65,13 @@ nav {
 
 #main-menu ul.sub-menu {
     position: absolute;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
     padding: 0;
     list-style: none;
     width: 370px;
     display: none;
     z-index: 3;
-    box-shadow: 0px 2px 2px 2px  grey;
+    box-shadow: 0px 2px 2px 2px grey;
 }
 
 #main-menu ul.sub-menu a {
@@ -89,7 +89,7 @@ nav {
     border: none;
 }
 
-#main-menu li:hover ul.sub-menu{
+#main-menu li:hover ul.sub-menu {
     display: block;
 }
 
@@ -122,123 +122,148 @@ nav {
     position: relative;
 }
 
-#sub-menu2{
+#sub-menu2 {
     position: absolute;
     left: 10px;
     top: 130px;
 }
 
-#banner {
+
+
+
+
+
+
+#section {
+    position: relative;
     top: 130px;
-    height: 400px;
+}
+
+/* Header styles */
+.header_contact {
+    background-color: #ff6600;
+    padding: 20px 0;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.header_contact h1 {
+    color: #fff;
+    bottom: 10%;
+}
+
+/* Container styles */
+.container_contact {
+    width: 900px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
-#icon-left, #icon-right {
-    font-size: 70px;
-    position: absolute;
-    top: 150px;
+/* Form styles */
+form {
+    margin-top: 30px;
+    height: 600px;
+    width: 500px;
 }
 
-#icon-left {
-    left: 10px;
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px;
 }
 
-#icon-right {
-    right: 10px;
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 870px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ded5d5;
+    border-radius: 4px;
 }
 
-.slides {
-    width: 100%;
-    height: 400px;
-}
-
-#img2, #img3{
-    display: none;
-} 
-
-#section1 ul {
-    position: absolute;
-    z-index: 4;
-    width: 100px;
-    top: 88%;
-    left: 50%;
-    margin-left: -50px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#section1 ul li {
-    width: 20px;
-    height: 20px;
-    background: rgb(235, 243, 115);
-    opacity: 0.6;
-    list-style: none;
-    border-radius: 50%;
+input[type="submit"] {
+    background-color: #ff6600;
+    color: #ece4e4;
+    border: none;
+    padding: 10px 20px;
     cursor: pointer;
 }
 
-#section2 {
+input[type="submit"]:hover {
+    background-color: #ff3300;
+}
+
+#container_contact {
+    margin-right: 10px;
+
+}
+
+.Contact_info {
+    font-size: 40px;
+    color: #404407;
+    text-align: center;
+    background-color: #ded5d5;
+    padding: 10px 0px;
+}
+
+#conntainer_contact {
     position: relative;
     top: 140px;
 }
 
-#section2 h1 {
-    text-align: center;
-    font-size: 50px;
-    color: chocolate;
-    width: 500px;
-    justify-content: center;
-    box-shadow: 0px 21px rgb(135, 235, 135);
-    background-color: rgb(252, 183, 160);
-    border-radius: 15px;
-    padding: 10px 0px;
-    margin: 10px 0px auto;
-    position: relative;
-    left: 37%;
-    transition: 0.3s;
-}
-
-#section2 h1:active {
-    box-shadow: 0px 1px rgb(135, 235, 135);
-    transform: translateY(20px);
-}
-
-.product {
-    width: 340px;
-    position: absolute;
-}
-
-.product p{
+#conntainer_contact p {
     padding: 0;
     margin: 0;
-    font-size: 25px;
-    text-align: center;
-    font-weight: bolder;
-    border: 1px solid green;
-    border-radius: 20px;
-    width: 200px;
-    position: relative;
-    left: 50px;
-    background-color: rgba(135, 235, 135,0.5);
-    color: rgb(1, 78, 1);
 }
 
-
-
-.productimg {
-    width: 330px;
-    height: auto;
-}
-
-#producttm .product1{
+#content {
     display: flex;
-    margin: 20px 0px;
-    position: relative;
 }
 
-#producttm .product1 .product {
-    display: block;
-    position: relative;
+#contact1 {
+    width: 790px;
+    height: 900px;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
+#button {
+    position: relative;
+    left: 370px;
+    height: 80px;
+    width: 200px;
+    font-size: 40px;
+}
+
+#Contact_nd {
+    font-size: 20px;
+}
+
+#Shop {
+    width: auto;
+    height: 200px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+#Shop1 {
+    font-size: 25px;
+}
+
+#content1, #content2 {
+    height: 300px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#content2 h3{
+    margin-bottom: 10px;
+}
+
+#contact1 {
+    position: relative;
+}
