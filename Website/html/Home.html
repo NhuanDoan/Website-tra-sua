@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
-    <meta name="description" content="Trang chủ KigMilk">
-    <meta name="keywords" content="KigMilk, trà sữa, trang chủ">
-    <link rel="stylesheet" href="../css/HomePageStyle.css">
-    <link rel="stylesheet" href="../Fonts/fontawesome-free-6.4.2-web/css/all.min.css">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/HomePage/Trasua1.png">
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/HomeStyle.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.min.css">
     <script>
 
         var slideIndex = 1;
@@ -50,12 +51,13 @@
         }
 
     </script>
+
 </head>
 
 <body>
-    <div class="layout"">
+    <div class="container1">
         <div id="header">
-            <nav class="container">
+            <nav>
                 <a href="" id="logo">
                     <img src="../img/HomePage/Logo.png" alt="Logo" id="logo1">
                 </a>
@@ -71,10 +73,10 @@
                     </li>
                 </ul>
                 <li><a href="News.html">Tin tức</a></li>
-                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="Contact.html">Liên hệ</a></li>
                 <li><i class="fa-solid fa-user" id="icon"></i>
                     <ul class="sub-menu" id="sub-menu2">
-                        <li><a href="SignIn.html">Đăng nhập</a></li>
+                        <li><a href="Signin.html">Đăng nhập</a></li>
                         <li><a href="Register.html">Đăng ký</a></li>
                     </ul>
                 </li>
@@ -99,8 +101,10 @@
                 </div>
             </div>
         </div>
-        <div id="section2">
+        <div class="title1">
             <h1>Mùa hè sảng khoái</h1>
+        </div>
+        <div id="section2">
             <div id="producttm">
                 <div class="product1">
                     <div class="product">
@@ -123,11 +127,7 @@
                         <p>Trà vải <br>
                             25 000 vnđ</p>
                     </div>
-                    <div class="product">
-                        <img src="../img/HomePage/Trasua5.png" alt="Trà sữa 5" class="productimg">
-                        <p>Trà dâu kem <br>
-                            45 000 vnđ</p>
-                    </div>
+
                 </div>
                 <div class="product1">
                     <div class="product">
@@ -150,6 +150,14 @@
                         <p>Trà sữa đậu biếc <br>
                             55 000 vnđ</p>
                     </div>
+
+                </div>
+                <div class="product1">
+                    <div class="product">
+                        <img src="../img/HomePage/Trasua5.png" alt="Trà sữa 5" class="productimg">
+                        <p>Trà dâu kem <br>
+                            45 000 vnđ</p>
+                    </div>
                     <div class="product">
                         <img src="../img/HomePage/Trasua10.png" alt="Trà sữa 10" class="productimg">
                         <p>Trà sữa phô mai <br>
@@ -157,9 +165,9 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
+    </div>
+    </div>
 
     </div>
 </body>

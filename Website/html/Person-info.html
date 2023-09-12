@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Thông tin cá nhân</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/Person-infoStyle.css"> 
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.min.css">
+</head>
+
+<body>
+    
+    <ul class="breadcrumb">
+        <i class="fa-solid fa-house fa-sm"></i>
+        <li><a href="../html/Home.html">Trang chủ</a></li>
+        <li class="active">Tài khoản cá nhân</li>
+    </ul>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hồ sơ của tôi
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Tài khoản của tôi</a></li>
+            <li><a href="#">Đơn hàng</a></li>
+            <li><a href="#">Đăng xuất</a></li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        
+        <header>
+            
+            <h1>Tài khoản của bạn</h1>
+            <hr width="10%">
+            <hr>
+        </header>
+
+        <section>
+        
+            <nav>
+                <div>
+                <h2>Tài Khoản</h2>
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Thông tin tài khoản</a>
+                    <a href="#" class="list-group-item">Danh sách địa chỉ</a>
+                    <a href="../html/SignIn.html" class="list-group-item">Đăng xuất</a>
+                </div>
+                </div>
+            </nav>
+        
+            <article>
+                <h2>Thông tin tài khoản</h2>
+                <hr>
+                <div class="input-group">
+                    <span class="input-group-addon">Họ và tên:</span>
+                    <input id="msg" type="text" class="form-control" name="msg" placeholder="">
+                </div> <br>
+                <div class="input-group">
+                    <span class="input-group-addon">Số điện thoại:</span>
+                    <input id="msg" type="text" class="form-control" name="msg" placeholder="">
+                </div> <br>
+                <div class="input-group">
+                    <span class="input-group-addon">Đc mail:</span>
+                    <input id="msg" type="text" class="form-control" name="msg" placeholder="">
+                </div> <br>
+                <div class="input-group">
+                    <span class="input-group-addon">Địa chỉ:</span>
+                    <input id="msg" type="text" class="form-control" name="msg" placeholder="">
+                </div> <br>
+                <div class="cstt">
+                    <button type="button" class="btn btn-default">Chỉnh sửa thông tin</button>
+                </div>
+                
+                
+            </article>
+        </section>
+
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+</body>
+
+</html>

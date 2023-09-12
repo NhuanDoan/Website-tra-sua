@@ -7,14 +7,15 @@
     <title>Giới thiệu</title>
     <meta name="description" content="Giới thiệu KigMilk">
     <meta name="keywords" content="KigMilk, trà sữa, giới thiệu">
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/MenuStyle.css">
-    <link rel="stylesheet" href="../Fonts/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.min.css">
 </head>
 
 <body>
     <div id="wrapper">
         <div id="header">
-            <nav class="container">
+            <nav >
                 <a href="" id="logo">
                     <img src="../img/HomePage/Logo.png" alt="Logo" id="logo1">
                 </a>
@@ -42,13 +43,17 @@
         </div>
         <div id="bar">
             <h2>Menu</h2>
-            <ul class="sub-menu1">
-                <li><a href="">Trà sữa truyền thống</a></li>
-                <li><a href="">Đá xay</a></li>
-                <li><a href="">Trà nhiệt đới</a></li>
-                <li><a href="">Trà sữa mùa hạ</a></li>
+            <div class="btn-group-vertical">
+                <a href="#TsTT"><button type="button" class="btn btn-primary">Trà sữa truyền thống</button></a>
+                <a href="#ĐX"><button type="button" class="btn btn-primary">Đá xay</button></a>
+                <a href="#TND"><button type="button" class="btn btn-primary">Trà nhiệt đới</button> </a>
+                <a href="#TsMH"><button type="button" class="btn btn-primary">Trà sữa mùa hạ</button> </a>
+            </div>
         </div>
         <div id="producttm">
+            <div class="title">
+                <h2 id="TsTT">Trà Sữa truyền thống</h2>
+            </div>
             <div class="product1">
                 <div class="product">
                     <img src="../img/HomePage/Trasua1.png" alt="Trà sữa 1" class="productimg">
@@ -65,16 +70,9 @@
                     <p>Trà ô lông <br>
                         35 000 vnđ</p>
                 </div>
-                <div class="product">
-                    <img src="../img/HomePage/Trasua4.png" alt="Trà sữa 4" class="productimg">
-                    <p>Trà vải <br>
-                        25 000 vnđ</p>
-                </div>
-                <div class="product">
-                    <img src="../img/HomePage/Trasua5.png" alt="Trà sữa 5" class="productimg">
-                    <p>Trà dâu kem <br>
-                        45 000 vnđ</p>
-                </div>
+            </div>
+            <div class="title">
+                <h2 id="ĐX">Đá xay</h2>
             </div>
             <div class="product1">
                 <div class="product">
@@ -92,18 +90,37 @@
                     <p>Trà sữa hạt lựu <br>
                         75 000 vnđ</p>
                 </div>
+            </div>
+            <div class="title">
+                <h2 id="TND">Trà nhiệt đới</h2>
+            </div>
+            <div class="product1">
+                <div class="product">
+                    <img src="../img/HomePage/Trasua4.png" alt="Trà sữa 4" class="productimg">
+                    <p>Trà vải <br>
+                        25 000 vnđ</p>
+                </div>
+                <div class="product">
+                    <img src="../img/HomePage/Trasua5.png" alt="Trà sữa 5" class="productimg">
+                    <p>Trà dâu kem <br>
+                        45 000 vnđ</p>
+                </div>
                 <div class="product">
                     <img src="../img/HomePage/Trasua9.png" alt="Trà sữa 9" class="productimg">
                     <p>Trà sữa đậu biếc <br>
                         55 000 vnđ</p>
                 </div>
+            </div>
+            <div class="title">
+                <h2 id="TsMH">Trà sữa mùa hạ</h2>
+            </div>
+            <div class="product1">
                 <div class="product">
                     <img src="../img/HomePage/Trasua10.png" alt="Trà sữa 10" class="productimg">
                     <p>Trà sữa phô mai <br>
                         45 000 vnđ</p>
                 </div>
             </div>
-
         </div>
 </body>
 

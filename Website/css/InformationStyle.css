@@ -1,22 +1,30 @@
 body {
+    /* background-image: url("../img/HomePage/Background.jpg"); */
     background-color: rgb(198, 253, 235);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -150px;
+    background-position-y: -10vw;
     padding: 0;
     margin: 0;
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #logo1 {
-    width: 100px;
+    width: 6vw;
     height: auto;
-    border-radius: 40px;
-    padding: 15px 15px;
+    border-radius: 5vw;
+    display: flex;
+    left: 0;
+    position: relative;
+    padding: 1vw 0.5vw;
 }
 
 #header {
     background-color: rgba(255, 255, 255, 1);
-    height: 130px;
+    height: 8vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -24,13 +32,12 @@ body {
     width: 100%;
 }
 
-.container {
-    margin: 0px auto;
-}
+
 
 nav {
     display: flex;
-    justify-items: center;
+    flex-direction: row;
+
 }
 
 #main-menu {
@@ -38,17 +45,18 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 
-#main-menu li a{
+#main-menu li a {
     color: black;
     font-weight: bolder;
     display: block;
-    padding: 0px 70px;
-    line-height: 130px;
+    padding: 0px 4vw;
+    line-height: 8vw;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1.5vw;
 }
 
 #main-menu li {
@@ -57,18 +65,20 @@ nav {
 
 #main-menu ul.sub-menu {
     position: absolute;
-    background-color: rgba(151,255,255,0.6);
+    background-color: rgba(255, 255, 255, 1);
     padding: 0;
     list-style: none;
-    width: 370px;
+    width: 25vw;
     display: none;
+    z-index: 3;
+    box-shadow: 0vw 0.1vw 0.1vw 0.1vw grey;
 }
 
 #main-menu ul.sub-menu a {
     line-height: normal;
-    padding: 10px 20px;
+    padding: 0.5vw 1vw;
     margin: auto;
-    border-bottom: 1px solid green;
+    border-bottom: 0.1vw solid green;
 }
 
 #main-menu ul.sub-menu li:hover a {
@@ -79,7 +89,7 @@ nav {
     border: none;
 }
 
-#main-menu li:hover ul.sub-menu{
+#main-menu li:hover ul.sub-menu {
     display: block;
 }
 
@@ -87,9 +97,10 @@ nav {
     position: relative;
 }
 
+
 #main-menu>li>a::before {
     content: "";
-    height: 4px;
+    height: 0.2vw;
     width: 0%;
     background: green;
     position: absolute;
@@ -102,53 +113,117 @@ nav {
     width: 100%;
 }
 
+
+
 #icon {
-    font-size: 70px;
+    position: absolute;
+    font-size: 5vw;
 }
 
 #main-menu>li:last-child {
-    padding: 25px 0px;
-    padding-left: 240px;
+    padding: 1.5vw 0vw;
+    padding-left: 12vw;
     position: relative;
 }
 
-#sub-menu2{
+#sub-menu2 {
     position: absolute;
-    left: 10px;
-    top: 130px;
+    left: 5.4vw;
+    top: 8vw;
 }
+
+.title {
+    position: relative;
+    top: 6vw;
+    display: block;
+    height: 27vw;
+}
+
+.content1 {
+    margin-top: 6vw;
+    display: block;
+    height: 70vw;
+    padding: 0vw 1.5vw;
+}
+
+.content2 {
+    height: 90vw;
+    padding: 0vw 1vw;
+}
+
 .td {
     color:rgb(4, 24, 61);
     position: absolute;
-    top: 450px;
-    font-size: 70px;
+    top: 18vw;
+    font-size: 5vw;
     font-style: italic;
-    padding: 40px;
-    margin: 65px;
+    margin:5vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 7vw;
+    text-align: center;
+    width: 40vw;
+    line-height: 7vw;
+    border-radius: 3vw;
+
+    -moz-user-select: none !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
 }
 #tieude {
     text-transform: uppercase;
     text-align: center;
-    font-size: 50px;
-    height: 108px;
-    padding-top: 40px;
+    font-size: 4vw;
+    height: 9vw;
+    padding-top: 4vw;
     color: rgb(4, 24, 61);
     /* letter-spacing: .15em; */
     
 }
 p{
-    font-size: 30px;
+    font-size: 2vw;
     text-align:justify;
+    margin-top: 1vw;
 }
-#khac {
+#khac>p {
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
     text-align: center;
-    font-size: 50px;
-    height: 70px;
-    padding-top: 40px;
+    font-size: 4vw;
+    height: 7vw;
     color: black;
+    line-height: 7vw;
     background-color:burlywood;
-    letter-spacing: .10em;
+    -moz-user-select: none !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
 }
 
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+#img1 {
+    height: 100%;
+    width: 100%;
+}
+
+.content1>img, .content2>img {
+    margin: 2vw;
+}
+
+#img2 {
+    height: 35vw;
+    width: auto;
+}
+
+#img3 {
+    height: 50vw;
+    width: auto;
+}
