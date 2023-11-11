@@ -1,0 +1,57 @@
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #fff;
+}
+
+.nav {
+    background-color: rgb(153, 95, 7) ;
+}
+
+.nav .navbar-expand-lg .navbar-nav .nav-link {
+    color: white;
+    font-size: 140%;
+}
+
+.nav .navbar-expand-lg .navbar-nav li:hover, .active {
+    background-color: rgb(184, 113, 8);
+}
+
+
+.nav .navbar {
+    padding: 0;
+}
+
+.btn-group {
+    border-radius: 0px;
+}
+
+
+.Panel .carousel-indicators [data-bs-target] {
+    background-color: rgb(153, 95, 7);
+}
+
+.info .row>* {
+    margin: 0 ;
+    padding: 0;
+}
+
+.info .content-2 {
+    background-color: rgb(245, 231, 168);
+} 
+
+.footer .row .col-md-4 {
+    background-color: rgb(153, 95, 7);
+    text-align: center;
+    color: #fff;
+    font-size: 60%;
+}
+
+.footer .row  .col-md-8 ul {
+    list-style: none;
+    padding: 0;
+    font-size: 60%;
+}
