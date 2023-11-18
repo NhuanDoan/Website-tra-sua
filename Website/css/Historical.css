@@ -39,7 +39,7 @@ body {
     position: relative;
     width: 100%;
     background-attachment: fixed;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #logo1 {
@@ -157,59 +157,24 @@ nav {
     left: 5.4vw;
     top: 8vw;
 }
-
-.news {
-    color: brown;
-    font-style: italic;
+.col-md-12 h2{
+    line-height: 50px;
+    text-align: center;
 }
-
-#tieude {
-    color: brown;
-    border-bottom: 1px solid;
-   text-align: center;
-   text-shadow: 20px 10px 10px burlywood;
+.datlai{
+    text-align: center;
+    color: rgb(17, 95, 17);
+    border: none;
 }
-
-.fontchu {
-    font-style: italic;
-    color: brown;
+#container{
+    background-color: antiquewhite;
 }
-
 #xemthem {
-    margin-top: 20px;
     text-align: center;
     text-transform: uppercase;
     color: red;
     font-size: 20px;
 }
-hr{
-    border: px solid;
-    color: black;
-
-}
-.footer .row .col-md-4 {
-    background-color: rgb(153, 95, 7);
-    text-align: center;
-    color: #fff;
-    font-size: 60%;
-}
-
-.footer .row  .col-md-8 ul {
-    list-style: none;
-    padding: 0;
-    font-size: 60%;
-}
-.footer{
-   margin-top: 10px;
-    clear: both;
-}
-
-.header-contact {
-    background-image: url("../img/News/banner-tintuc-uudai.png");
-    height: 300px;
-}
-
-.container-fluid {
-    margin: 0;
-    padding: 0;
+.fa-solid fa-arrow-left{
+    color:black;
 }

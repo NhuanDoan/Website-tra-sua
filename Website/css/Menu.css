@@ -25,6 +25,10 @@
     padding: 0;
 }
 
+.h1 {
+    border-radius: 100px;
+}
+
 .btn-group {
     border-radius: 0px;
 }
@@ -54,10 +58,47 @@
     text-align: center;
 }
 
-.product-list-s .col-md-4 .h4 {
+.product-list-s .col-md-4 .h5 {
     color: crimson;
 }
 
-.product-list-s .col-md-4 .h3 {
+.product-list-s .col-md-4 .h4 {
     color: green;
+}
+
+.product-list-s .card:hover>img {
+    transform: scale(1.04);
+}
+
+.modal-backdrop {
+    z-index: 1040;
+  }
+
+
+.modal-content table p {
+    text-align: right;
+}
+
+.modal-content table input {
+    width: 60%;
+}
+
+.modal-content table th {
+    width: 25%;
+    text-align: center;
+}
+
+.modal-content table th:first-child {
+    width: 30%;
+}
+
+.modal-content {
+    width: 150%;
+}
+
+.modal-content table td {
+    text-align: center;
+}
+.modal .h5 {
+    text-align: right;
 }

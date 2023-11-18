@@ -1,0 +1,92 @@
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #fff;
+}
+
+.nav {
+    background-color: rgb(153, 95, 7);
+}
+
+.nav .navbar-expand-lg .navbar-nav .nav-link {
+    color: white;
+    font-size: 140%;
+}
+
+.nav .navbar-expand-lg .navbar-nav li:hover,
+.active {
+    background-color: rgb(184, 113, 8);
+}
+
+
+.nav .navbar {
+    padding: 0;
+}
+
+.btn-group {
+    border-radius: 0px;
+}
+.err{
+    color: red;
+}
+h1{
+    color:brown;
+}
+.modal-content {
+    background-color:white;
+    color: blue;
+    height: 100%;
+    padding-bottom: 20%;
+    
+    width: 100%;
+    
+
+    
+}
+.row-content{
+    background-color:white;
+    color: blue;
+    height: 100%;
+    width: 100%;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+
+}
+
+.col-4{
+    background-color: beige;
+    padding-top: 3%;
+    padding-left: 5%;
+    margin-top: 5%;
+   
+    margin-bottom: 5%;
+}
+.col-8{
+    margin-top: 5%;
+}
+h5{
+    color: brown;
+}
+.table{
+    border-style: dotted dashed solid double;
+}
+.col-8-contain{
+    text-align: center;
+}
+.tieude{
+    text-align: center;
+}
+.close{
+    text-align: right;
+}
+.xacnhan{
+    margin-top: 20%;
+    margin-bottom: -20%;
+}
+
+

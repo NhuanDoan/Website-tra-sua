@@ -30,6 +30,10 @@
 }
 
 
+
+
+
+
 .Panel .carousel-indicators [data-bs-target] {
     background-color: rgb(153, 95, 7);
 }
@@ -54,4 +58,5 @@
     list-style: none;
     padding: 0;
     font-size: 60%;
+    color: rgb(153, 95, 7);
 }

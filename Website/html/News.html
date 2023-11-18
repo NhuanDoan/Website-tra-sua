@@ -5,93 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tin tức</title>
-    <meta name="description" content="Giới thiệu KigMilk">
+    <link rel="shortcut icon" type="image/png" href="../img/Logo/Logo1.png" />
+    <meta name="description" content="Giới thiệu TeaMilk">
     <meta name="keywords" content="KigMilk, trà sữa, giới thiệu">
     <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
-    <script src=../bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js></script>
+    <!-- <script src=../bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js></script> -->
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/News.css">
     <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.min.css">
 </head>
 
 <body>
-    <div id="container">
-        <div class="header">
-            <div class="container">
-                <div class="row py-4">
-                    <div class="col-md-2 col-12 px-0">
-                        <img src="../img/Logo/Logo_header.png" class="img-fluid" alt="Logo">
+    <div class="header position-sticky sticky-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-4 px-0">
+                    <img src="../img/Logo/Logo_header.png" class="img-fluid" alt="Logo">
+                </div>
+                <div class="col-md-4 col-sm-8 col-8 py-3">
+                    <div class="input-group mb-3 ">
+                        <input type="text" class="form-control" placeholder="Đến trang menu để tìm kiếm sản phẩm"
+                            aria-label="Từ khóa tìm kiếm" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
                     </div>
-                    <div class="col-md-4 col-12 py-3">
-                        <div class="input-group mb-3 ">
-                            <input type="text" class="form-control" placeholder="Từ khóa tìm kiếm"
-                                aria-label="Từ khóa tìm kiếm" aria-describedby="basic-addon2">
-                            <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-8 py-3 px-0">
-                        <div class="row">
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="fs-3 text-info">
-                                            <i class="fa-solid fa-phone"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 px-0">
-                                        Hotline<br>
-                                        <strong class="text-info">19008198</strong>
+                </div>
+                <div class="col-md-4 col-sm-8 col-8 py-3 px-0">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="fs-3 text-info">
+                                        <i class="fa-solid fa-phone"></i>
                                     </div>
                                 </div>
+                                <div class="col-md-8 px-0">
+                                    Hotline<br>
+                                    <strong class="text-info">19008198</strong>
+                                </div>
                             </div>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="fs-3 text-info">
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="fs-3 text-info">
+                                        <a href="dangnhap.html" id="taikhoan">
                                             <i class="fa-regular fa-circle-user"></i>
-                                        </div>
+                                        </a>
                                     </div>
-                                    <div class="col-md-8 px-0">
-                                        Xin chào!<br>
-                                        <strong class="text-info">Đăng nhập</strong>
-                                    </div>
+                                </div>
+                                <div class="col-md-8 px-0">
+                                    Xin chào!<br>
+                                    <strong class="text-info" id="Dangnhap">Đăng nhập</strong>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 col-4 py-3">
-                        <div class="row">
-                            <div class="col-md-6 col-6">
-                                <a href="#" class=" position-relative">
-                                    <span class="fs-5">
-                                        <i class="fa-regular fa-heart"></i>
-                                    </span>
-                                    <span
-                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                        0
-                                        <span class="visually-hidden">unread messages</span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-6">
-                                <a href="#" class=" position-relative">
-                                    <span class="fs-5">
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                    </span>
-                                    <span
-                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                        0
-                                        <span class="visually-hidden">unread messages</span>
-                                    </span>
-                                </a>
-                            </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-4 py-3">
+                    <div class="row">
+                        <div class="col-md-6 col-6">
+                            <a href="#" class="fs-2 position-relative">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-6">
+                            <a href="#" class="fs-2 position-relative" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#" id="giohang" onclick="ttgiohang()">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </a>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="nav position-sticky sticky-top ">
+        <div class="nav ">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 px-0">
@@ -105,28 +95,28 @@
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                                        <li class="nav-item px-4 py-2 active">
-                                            <a class="nav-link " aria-current="page" href="index.html">Trang chủ</a>
+                                        <li class="nav-item px-4 py-2 ">
+                                            <a class="nav-link" aria-current="page" href="index.html">Trang chủ</a>
                                         </li>
                                         <li class="nav-item px-4 py-2" aria-current="page" href="#">
-                                            <a class="nav-link " href="#">Giới thiệu</a>
+                                            <a class="nav-link" href="Info.html">Giới thiệu</a>
                                         </li>
-                                        <li class="nav-item dropdown btn-group px-4 py-2">
+                                        <li class="nav-item dropdown btn-group px-4 py-2 ">
                                             <a class="nav-link " href="Menu.html" role="button">
                                                 Menu
                                             </a>
                                             <a class="nav-link dropdown-toggle" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                                data-bs-toggle="dropdown"></a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Thức uống</a></li>
-                                                <li><a class="dropdown-item" href="#">Bánh ngọt</a></li>
+                                                <li><a class="dropdown-item" href="#Thucuong">Thức uống</a></li>
+                                                <li><a class="dropdown-item" href="#doannhe">Bánh ngọt</a></li>
                                             </ul>
                                         </li>
-                                        <li class="nav-item px-4 py-2" aria-current="page" href="#">
+                                        <li class="nav-item px-4 py-2 active" aria-current="page" href="#">
                                             <a class="nav-link" href="News.html">Tin tức</a>
                                         </li>
                                         <li class="nav-item px-4 py-2" aria-current="page" href="#">
-                                            <a class="nav-link" href="#">Liên hệ</a>
+                                            <a class="nav-link" href="contact.html">Liên hệ</a>
                                         </li>
                                     </ul>
                                     <div class="socnet">
@@ -149,155 +139,358 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="row" height="800px">
-                <div class="col-sm-12">
-                    <h1 class="news">
-                        Tin tức và ưu đãi
-                    </h1>
-                    <img src="../img/News/background-tra-sua-sua-tuoi-tran-chau.jpeg" alt="background" width="100%" ,
-                        height="800px">
-                </div>
+    </div>
+    <div class="container-fluid">
+        <div class="header-contact row py-5">
+            <div class="col-12">
+                <p class="news fs-1 lh-lg">
+                    <i class="fa-solid fa-house"></i>
+                    <i> Tin tức & Ưu đãi</i>
+                </p>
+                <p >Thông tin ưu đãi và các khuyến mãi hấp dẫn đến từ nhà TeaMilk</p>
             </div>
-            <h1 id="tieude">
-                Tin tức HOT
-            </h1>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="row" style="height:300px">
-                        <div class="col-sm-4">
-                            <button type="button" class="btn btn-light" data-bs-toggle="modal"
-                                data-bs-target="#mymodal">
-                                <img src="../img/News/Trà-sữa-hạt-dẻ.jpg" height="300px" width="100%"
-                                    style="padding-left: 50px;" alt="">
-                                <button type="button" class="btn btn-light" style="width:100%;font-size: 25px;"
-                                    data-bs-toggle="modal" data-bs-target="#mymodal">NEWS ! ! ! ! " HẠT DẺ RA
-                                    ĐỜI..."</button>
-                                <p>Nhân dịp 1 loại trà sữa mới vừa ra mắt tại quán,quán sẽ khuyến mãi cho 100 bạn đầu
-                                    tiên khi mà ...</p>
-                            </button>
-                            <div id="mymodal" class="modal fade" role="dialog">
-                                <div class="modal-dialog" style="background-color: bisque;">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">
-                                            <b>NEWS ! ! ! ! " HẠT DẺ RA ĐỜI..."</b>
-                                        </h4>
-                                        <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="/action_page.php">
-                                            <div class="form-group">
-                                                <p>
-                                                    Nhân dịp 1 loại trà sữa mới vừa ra mắt tại quán,quán sẽ khuyến mãi
-                                                    cho 100 bạn đầu tiên khi mà
-                                                    các bạn đến và order loại trà sữa mới này . Món uống mới của quán có
-                                                    tên rất độc đáo là "hạt dẻ"
-                                                    , một phần cũng vì thành phần tham gia của món uống này là quả hạt
-                                                    dẻ , làm cho hương vị của
-                                                    trà sữa thêm phần mới lạ , hương thơm và độ ngọt ngào sẽ làm cho các
-                                                    bạn thích mê. HÃY ĐẾN VỚI
-                                                    CHÚNG TÔI !
-                                                </p>
-                                                <img src="../img/News/hong-tra-sua-5.jpg.jpg" alt="" width="450px"
-                                                    height="300px">
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-4">
-                            <button type="button" class="btn btn-light" data-bs-toggle="modal"
-                                data-bs-target="#mymodal1">
-                                <img src="../img/News/tải xuống.jpg" height="300px" width="100%" alt="">
-                                <button type="button" class="btn btn-light" style="width:100%;font-size: 24px;"
-                                    data-bs-toggle="modal" data-bs-target="#mymodal1">Chi nhánh mới tại Nguyễn Văn
-                                    Bảo!</button>
-                                <p>Thật vui khi 1 chi nhánh mới của KigMilk vừa được khai trương, quán có cấu trúc tương
-                                    tự các chi nhánh trước đây...</p>
-                            </button>
-                            <div id="mymodal1" class="modal fade" role="dialog">
-                                <div class="modal-dialog" style="background-color: bisque;">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">
-                                            <b>TƯNG BƯNG KHAI TRƯƠNG</b>
-                                        </h4>
-                                        <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="/action_page.php">
-                                            <div class="form-group">
-                                                <p>Thật vui khi 1 chi nhánh mới của KigMilk vừa được khai trương, quán
-                                                    có cấu
-                                                    trúc tương tự các chi nhánh trước đây . Để đáp ứng được nhu cầu
-                                                    thưởng thức
-                                                    các loại trà sữa thơm ngơn đến từ KigMilk dành cho các bạn sinh viên
-                                                    IUH cũng
-                                                    như các bạn sinh viên khác có thể đến để thưởng thức, quán vẫn sẽ có
-                                                    menu như
-                                                    các chi nhánh trước đây , ngoài ra sẽ có thêm gian bánh cho các bạn
-                                                    lựa chọn
-                                                    để thưởng thức kèm với trà sữa thơm béo , ngọt ngọt mà thanh tao.
-                                                    Mời các bạn đến
-                                                    để chung vui trong ngày khai trương của quán nhé !
-                                                </p>
-
-                                                <img src="../img/News/khai trương.jpg" alt="" width="450px"
-                                                    height="300px">
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="col-sm-4">
-                            <button type="button" class="btn btn-light" data-bs-toggle="modal"
-                                data-bs-target="#mymodal2">
-                                <img src="../img/News/noel.png" height="300px" width="100%" alt="">
-                                <button type="button" class="btn btn-light" style="width:100%;font-size: 21px;"
-                                    data-bs-toggle="modal" data-bs-target="#mymodal2">SỐC!!! Giảm giá sập sàn đón giáng
-                                    sinh...</button>
-                                <p>Ngày lễ giáng sinh đang đến gần, để chào mừng ngày lễ cuối năm để chuẩn bị bước sang
-                                    năm mới , quán sẽ giảm 30% cho...</p>
-                                <div id="mymodal2" class="modal fade" role="dialog">
+        </div>
+        <div class="container">
+            <div class="row my-2">
+                <h1 id="tieude">
+                    <i> TIN TỨC HOT</i>
+                </h1>
+                <div class="row">
+                    <div class="col-md-12 col-12">
+                        <div class="row">
+                            <div class="col-md-4 col-12 card">
+                                <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                    data-bs-target="#mymodal">
+                                    <img src="../img/News/Trà-sữa-hạt-dẻ.jpg" class="img-thumbnail"
+                                        style="width:18rem;height:18rem">
+                                    <button type="button" class="btn btn-light" style="width:100%;font-size: 25px;"
+                                        data-bs-toggle="modal" data-bs-target="#mymodal">NEWS ! ! ! ! " HẠT DẺ RA
+                                        ĐỜI..."</button>
+                                    <p>Nhân dịp 1 loại trà sữa mới vừa ra mắt tại quán,quán sẽ khuyến mãi cho 100 bạn
+                                        đầu
+                                        tiên khi mà ...</p>
+                                </button>
+                                <div id="mymodal" class="modal fade" role="dialog">
                                     <div class="modal-dialog" style="background-color: bisque;">
                                         <div class="modal-header">
                                             <h4 class="modal-title">
-                                                <b>MỪNG NGÀY GIÁNG SINH </b>
+                                                <b>NEWS ! ! ! ! " HẠT DẺ RA ĐỜI..."</b>
                                             </h4>
                                             <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
                                         </div>
                                         <div class="modal-body">
                                             <form action="/action_page.php">
                                                 <div class="form-group">
-                                                    <p>Ngày lễ giáng sinh đang đến gần, để chào mừng ngày lễ cuối năm để
-                                                        chuẩn bị bước sang năm mới ,
-                                                        quán sẽ giảm 30% cho các bạn đến quán cùng với nhóm bạn bè tính
-                                                        trên mỗi hóa đơn , ngoài ra
-                                                        đặc biệt dành giảm 50% cho các cặp đôi đến và chụp hình với cây
-                                                        thông noel của quán . Đặc biệt
-                                                        sẽ miễn phí hóa đơn cho các bạn nếu tham gia xem live stream của
-                                                        quán vào ngày 22/12 để nhận ngay
-                                                        voucher của quán , chỉ có duy nhất 5 voucher các bạn hãy cùng
-                                                        đón xem nhé !
-                                                    </p>
-                                                    <img src="../img/News/noel2.jpg" alt="" width="450px"
-                                                        height="300px">
+                                                    <div class="col-md-12 col-12">
+                                                        <p>
+                                                            Nhân dịp 1 loại trà sữa mới vừa ra mắt tại quán,quán sẽ
+                                                            khuyến mãi
+                                                            cho 100 bạn đầu tiên khi mà
+                                                            các bạn đến và order loại trà sữa mới này . Món uống mới của
+                                                            quán có
+                                                            tên rất độc đáo là "hạt dẻ"
+                                                            , một phần cũng vì thành phần tham gia của món uống này là
+                                                            quả hạt
+                                                            dẻ , làm cho hương vị của
+                                                            trà sữa thêm phần mới lạ , hương thơm và độ ngọt ngào sẽ làm
+                                                            cho các
+                                                            bạn thích mê. HÃY ĐẾN VỚI
+                                                            CHÚNG TÔI !
+                                                        </p>
+                                                        <img src="../img/News/hong-tra-sua-5.jpg.jpg" alt=""
+                                                            class="img-fluid">
+                                                    </div>
                                                 </div>
                                             </form>
                                         </div>
                                     </div>
                                 </div>
+
+                            </div>
+                            <div class="col-md-4 col-12 card">
+                                <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                    data-bs-target="#mymodal1">
+                                    <img src="../img/News/tải xuống.jpg" class="img-thumbnail"
+                                        style="width:18rem;height:18rem" alt="">
+                                    <button type="button" class="btn btn-light" style="width:100%;font-size: 24px;"
+                                        data-bs-toggle="modal" data-bs-target="#mymodal1">Chi nhánh mới tại Nguyễn Văn
+                                        Bảo!</button>
+                                    <p>Thật vui khi 1 chi nhánh mới của TeaMilk vừa được khai trương, quán có cấu trúc
+                                        tương
+                                        tự các chi nhánh trước đây...</p>
+                                </button>
+                                <div id="mymodal1" class="modal fade" role="dialog">
+                                    <div class="modal-dialog" style="background-color: bisque;">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">
+                                                <b>TƯNG BƯNG KHAI TRƯƠNG</b>
+                                            </h4>
+                                            <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="/action_page.php">
+                                                <div class="form-group">
+                                                    <div class="col-md-12 col-12">
+                                                        <p>Thật vui khi 1 chi nhánh mới của TeaMilk vừa được khai
+                                                            trương, quán
+                                                            có cấu
+                                                            trúc tương tự các chi nhánh trước đây . Để đáp ứng được nhu
+                                                            cầu
+                                                            thưởng thức
+                                                            các loại trà sữa thơm ngơn đến từ TeaMilk dành cho các bạn
+                                                            sinh viên
+                                                            IUH cũng
+                                                            như các bạn sinh viên khác có thể đến để thưởng thức, quán
+                                                            vẫn sẽ có
+                                                            menu như
+                                                            các chi nhánh trước đây , ngoài ra sẽ có thêm gian bánh cho
+                                                            các bạn
+                                                            lựa chọn
+                                                            để thưởng thức kèm với trà sữa thơm béo , ngọt ngọt mà thanh
+                                                            tao.
+                                                            Mời các bạn đến
+                                                            để chung vui trong ngày khai trương của quán nhé !
+                                                        </p>
+                                                        <img src="../img/News/khai trương.jpg" alt="" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-4 col-12 card ">
+                                <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                    data-bs-target="#mymodal2">
+                                    <img src="../img/News/noel.png" class="img-thumbnail"
+                                        style="width:18rem;height:18rem" alt="">
+                                    <button type="button" class="btn btn-light" style="width:100%;font-size: 21px;"
+                                        data-bs-toggle="modal" data-bs-target="#mymodal2">SỐC!!! Giảm giá sập sàn đón
+                                        giáng
+                                        sinh...</button>
+                                    <p>Ngày lễ giáng sinh đang đến gần, để chào mừng ngày lễ cuối năm để chuẩn bị bước
+                                        sang
+                                        năm mới , quán sẽ giảm 30% cho...</p>
+                                    <div id="mymodal2" class="modal fade" role="dialog">
+                                        <div class="modal-dialog" style="background-color: bisque;">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">
+                                                    <b>MỪNG NGÀY GIÁNG SINH </b>
+                                                </h4>
+                                                <button type="button" class="close"
+                                                    data-bs-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="/action_page.php">
+                                                    <div class="form-group">
+                                                        <div class="col-md-12 col-12">
+                                                            <p>Ngày lễ giáng sinh đang đến gần, để chào mừng ngày lễ
+                                                                cuối năm để
+                                                                chuẩn bị bước sang năm mới ,
+                                                                quán sẽ giảm 30% cho các bạn đến quán cùng với nhóm bạn
+                                                                bè tính
+                                                                trên mỗi hóa đơn , ngoài ra
+                                                                đặc biệt dành giảm 55% cho các cặp đôi đến và chụp hình
+                                                                với cây
+                                                                thông noel của quán . Đặc biệt
+                                                                sẽ miễn phí hóa đơn cho các bạn nếu tham gia xem live
+                                                                stream của
+                                                                quán vào ngày 22/12 để nhận ngay
+                                                                voucher của quán , chỉ có duy nhất 5 voucher các bạn hãy
+                                                                cùng
+                                                                đón xem nhé !
+                                                            </p>
+                                                            <img src="../img/News/noel2.jpg" alt="" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div id="xemthem">
+                <button type="button" class="btn btn-danger">Xem Thêm</button>
+            </div>
+        </div>
+        <hr>
+        <div class="footer">
+            <div class="row">
+                <div class="col-md-4 col-12 p-2">
+                    <p class="h2">TeaMilk</p>
+                    <p>COPYRIGHT © 2023 TEA MILK VIỆT NAM</p>
+                </div>
+                <div class="col-md-8 col-12 p-2">
+                    <ul>
+                        <li>
+                            Trụ sở chính: Công ty Cổ Phần TeaMilk - ĐKKD: 9999 19919 do sở KHĐT TPHCM cấp lần
+                            đầu
+                            ngày 21/05/202x
+                        </li>
+                        <li>
+                            Địa chỉ: Phòng 7x0, Tầng 199, Tòa nhà Central Plaza, số 10 Lê Duẩn, phường Bến Nghé, quận 1,
+                            Hồ
+                            Chí Minh
+                        </li>
+                        <li>
+                            Điện thoại: 1900 000 999 (Ext.9999/ 9999)
+                        </li>
+                        <li>
+                            Fax: (099) 9999 9999
+                        </li>
+                        <li>
+                            Email: sales@teamilk.masangroup.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Giỏ hàng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="fs-5 my-3">Trà sữa hoàng kim</p>
+                            </td>
+                            <td>
+                                <p class="my-3 gia">50.000 VNĐ</p>
+                            </td>
+                            <td>
+                                <input type="number" name="" class="my-3 soluong" value="1"
+                                    onblur="calculateTotal(this)">
+                            </td>
+                            <td>
+                                <p class="my-3 thanhtien"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="fs-5 my-3">Trà sữa sương sáo</p>
+                            </td>
+                            <td>
+                                <p class="my-3 gia">45.000 VNĐ</p>
+                            </td>
+                            <td>
+                                <input type="number" name="" class="my-3 soluong" value="1"
+                                    onblur="calculateTotal(this)">
+                            </td>
+                            <td>
+                                <p class="my-3 thanhtien"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="fs-5 my-3">Tiramisu</p>
+                            </td>
+                            <td>
+                                <p class="my-3 gia">30.000 VNĐ</p>
+                            </td>
+                            <td>
+                                <input type="number" name="" class="my-3 soluong" value="1"
+                                    onblur="calculateTotal(this)">
+                            </td>
+                            <td>
+                                <p class="my-3 thanhtien"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="h5">Tổng thanh toán</td>
+                            <td id="totalAmount"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" type="button" onclick="dathang()">Đặt
+                        hàng</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <script>
+        const name = localStorage.getItem("NameTT");
+
+        var nameArray = name.split(' ');
+        var firstName = nameArray[nameArray.length - 1];
+
+
+        const TTDN = localStorage.getItem("trangthaiDN");
+        if (TTDN == "True") {
+            document.getElementById("Dangnhap").textContent = firstName;
+            const taikhoan = document.querySelector("#taikhoan");
+            taikhoan.href = "thongtin.html";
+            var cart = document.querySelector('#giohang');
+            cart.setAttribute('data-bs-target', '#cartModal');
+
+        }
+
+        function calculateTotal(input) {
+            var giaElement = input.parentElement.previousElementSibling.querySelector(".gia");
+            var thanhtienElement = input.parentElement.nextElementSibling.querySelector(".thanhtien");
+
+            var gia = parseFloat(giaElement.textContent.replace(/[^\d]/g, ''));
+            var soluong = input.value;
+            var thanhtienValue = gia * soluong;
+            var thanhtienFormatted = thanhtienValue.toLocaleString();
+            thanhtienElement.textContent = thanhtienFormatted + " VNĐ";
+            var totalAmount = calculateTotalAmount();
+            document.getElementById("totalAmount").textContent = totalAmount.toLocaleString() + " VNĐ";
+        }
+
+        function calculateTotalAmount() {
+            var totalAmount = 0;
+            document.querySelectorAll(".soluong").forEach(function (input) {
+                var giaElement = input.parentElement.previousElementSibling.querySelector(".gia");
+                var soluong = input.value;
+                var gia = parseFloat(giaElement.textContent.replace(/[^\d]/g, ''));
+                var subtotal = gia * soluong;
+                totalAmount += subtotal;
+            });
+
+            return totalAmount;
+        }
+
+        document.querySelectorAll(".soluong").forEach(function (input) {
+            calculateTotal(input);
+        });
+
+        document.querySelectorAll(".soluong").forEach(function (input) {
+            input.addEventListener("input", function () {
+                calculateTotal(input);
+            });
+        });
+
+        function dathang() {
+            window.location.href = "thanhtoan.html";
+        }
+
+        function ttgiohang() {
+            var cart = document.querySelector('#giohang');
+            ttgh = cart.getAttribute('data-bs-target');
+            if(ttgh == "#"){
+                alert("Vui lòng đăng nhập để sử dụng tính năng!!!");
+            }
+        }
+    </script>
 </body>
 
 </html>

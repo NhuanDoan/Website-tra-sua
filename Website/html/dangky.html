@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.min.css">
+    <style>
+        body {
+            background-image: url(../img/Dangnhap/pngtree-matcha-green-tea-gap-background-illustration-picture-image_1432764.jpg);
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container p-5 my-5 border" id="account-info">
+        <div class="row">
+            <h1 style="text-align: center;">THÔNG TIN ĐĂNG KÝ</h1>
+            <form action="/action_page.php" id="registerForm" onsubmit="registerUser(event)">
+                <div class="form-floating mb-3 mt-3">
+                    <input class="form-control" type="text" id="name" required placeholder="Tên tài khoản"><br>
+                    <label for="name">Tên tài khoản:</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <input class="form-control" type="tel" id="phone" required placeholder="Số điện thoại"><br>
+                    <label for="phone">Số điện thoại:</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <input class="form-control" type="password" id="password" required placeholder="Enter password"><br>
+                    <label for="password">Mật khẩu:</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <input class="form-control" type="password" id="confirmPassword" required
+                        placeholder="Enter password" onblur="validatePassword() "><br>
+                    <label for="password">Nhập lại mật khẩu:</label>
+                </div>
+                <div class="form-check mt-3 mb-3">
+                    <input class="form-check-input" type="checkbox" id="showPasswordCheckbox"
+                        onclick="togglePasswordVisibility()">
+                    <label class="form-check-label" for="rememberMe">Hiện mật khẩu</label>
+                </div>
+                <div style="text-align: center;">
+                    <input class="btn btn-success" type="submit" value="Đăng ký">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="text-center">
+        <span>@ 2023 Classy Login Form. All right reserved | Design By PhuHoang</span>
+    </div>
+    <script>
+        function registerUser(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const password = document.getElementById('password').value;
+            const user = {
+                name: name,
+                phone: phone,
+                password: password
+            };
+
+            let users = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [];
+            users.push(user);
+            localStorage.setItem("NameTT", name);
+            localStorage.setItem("PhoneTT", phone);
+            localStorage.setItem('users', JSON.stringify(users));
+            alert('Đăng ký thành công! Ấn OK để sang trang đăng nhập...');
+
+            window.location.href = "dangnhap.html";
+        }
+
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("password");
+            passwordInput.type = document.getElementById("showPasswordCheckbox").checked ? "text" : "password";
+            var cpasswordInput = document.getElementById("confirmPassword");
+            cpasswordInput.type = document.getElementById("showPasswordCheckbox").checked ? "text" : "password";
+        }
+
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            if (password !== confirmPassword) {
+                alert("Mật khẩu không trùng khớp");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>

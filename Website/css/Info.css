@@ -30,6 +30,14 @@
     border-radius: 0px;
 }
 
+.banner{
+    background-image: url(../img/Info/banner.jpg);
+    background-size: contain;
+    
+}
+
+
+
 
 
 
@@ -75,7 +83,15 @@
     margin-left: 10%;
 }
 
-footer {
-    clear: both;
-    line-height: 35px;
+.footer .row .col-md-4 {
+    background-color: rgb(153, 95, 7);
+    text-align: center;
+    color: #fff;
+    font-size: 60%;
+}
+
+.footer .row  .col-md-8 ul {
+    list-style: none;
+    padding: 0;
+    font-size: 60%;
 }

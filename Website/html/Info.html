@@ -4,6 +4,7 @@
 <head>
     <title>Giới thiệu</title>
     <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="../img/Logo/Logo1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
@@ -14,21 +15,21 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="header position-sticky sticky-top">
         <div class="container">
-            <div class="row py-4">
-                <div class="col-md-2 col-12 px-0">
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-4 px-0">
                     <img src="../img/Logo/Logo_header.png" class="img-fluid" alt="Logo">
                 </div>
-                <div class="col-md-4 col-12 py-3">
+                <div class="col-md-4 col-sm-8 col-8 py-3">
                     <div class="input-group mb-3 ">
-                        <input type="text" class="form-control" placeholder="Từ khóa tìm kiếm"
+                        <input type="text" class="form-control" placeholder="Đến trang menu để tìm kiếm sản phẩm"
                             aria-label="Từ khóa tìm kiếm" aria-describedby="basic-addon2">
                         <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i>
                         </span>
                     </div>
                 </div>
-                <div class="col-md-4 col-8 py-3 px-0">
+                <div class="col-md-4 col-sm-8 col-8 py-3 px-0">
                     <div class="row">
                         <div class="col">
                             <div class="row">
@@ -47,235 +48,372 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="fs-3 text-info">
-                                        <i class="fa-regular fa-circle-user"></i>
+                                        <a href="dangnhap.html" id="taikhoan">
+                                            <i class="fa-regular fa-circle-user"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-md-8 px-0">
                                     Xin chào!<br>
-                                    <strong class="text-info">Đăng nhập</strong>
+                                    <strong class="text-info" id="Dangnhap">Đăng nhập</strong>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-4 py-3">
+                <div class="col-md-2 col-sm-4 col-4 py-3">
                     <div class="row">
                         <div class="col-md-6 col-6">
-                            <a href="#" class=" position-relative">
-                                <span class="fs-5">
-                                    <i class="fa-regular fa-heart"></i>
-                                </span>
-                                <span
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                    0
-                                    <span class="visually-hidden">unread messages</span>
-                                </span>
+                            <a href="#" class="fs-2 position-relative">
+                                <i class="fa-regular fa-heart"></i>
                             </a>
                         </div>
                         <div class="col-md-6 col-6">
-                            <a href="#" class=" position-relative">
-                                <span class="fs-5">
-                                    <i class="fa-solid fa-bag-shopping"></i>
-                                </span>
-                                <span
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                    0
-                                    <span class="visually-hidden">unread messages</span>
-                                </span>
+                            <a href="#" class="fs-2 position-relative" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#" id="giohang" onclick="ttgiohang()">
+                                <i class="fa-solid fa-bag-shopping"></i>
                             </a>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="nav position-sticky sticky-top ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 px-0">
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                        <div class="container-fluid px-0">
-                            <a class="navbar-brand d-none" href="#">Navbar</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                                    <li class="nav-item px-4 py-2 ">
-                                        <a class="nav-link " aria-current="page" href="index.html">Trang chủ</a>
-                                    </li>
-                                    <li class="nav-item px-4 py-2 active" aria-current="page" href="#">
-                                        <a class="nav-link " href="Info.html">Giới thiệu</a>
-                                    </li>
-                                    <li class="nav-item dropdown btn-group px-4 py-2">
-                                        <a class="nav-link " href="Menu.html" role="button">
-                                            Menu
-                                        </a>
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false"></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Thức uống</a></li>
-                                            <li><a class="dropdown-item" href="#">Bánh ngọt</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item px-4 py-2" aria-current="page" href="#">
-                                        <a class="nav-link" href="News.html">Tin tức</a>
-                                    </li>
-                                    <li class="nav-item px-4 py-2" aria-current="page" href="#">
-                                        <a class="nav-link" href="#">Liên hệ</a>
-                                    </li>
-                                </ul>
-                                <div class="socnet">
-                                    <li class="nav-item px-4 py-2">
-                                        <span class="fs-2 px-1">
-                                            <i class="fa-brands fa-twitter" style="color: #1f93d6;"></i>
-                                        </span>
-                                        <span class="fs-2  px-1">
-                                            <i class="fa-brands fa-facebook" style="color: #1f93d6;;"></i>
-                                        </span>
-                                        <span class="fs-2  px-1 ">
-                                            <i class="fa-brands fa-telegram" style="color: #3c7cec;"></i>
-                                        </span>
-                                    </li>
+        <div class="nav ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 px-0">
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                            <div class="container-fluid px-0">
+                                <a class="navbar-brand d-none" href="#">Navbar</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                                        <li class="nav-item px-4 py-2 ">
+                                            <a class="nav-link" aria-current="page" href="index.html">Trang chủ</a>
+                                        </li>
+                                        <li class="nav-item px-4 py-2 active" aria-current="page" href="#">
+                                            <a class="nav-link" href="Info.html">Giới thiệu</a>
+                                        </li>
+                                        <li class="nav-item dropdown btn-group px-4 py-2 ">
+                                            <a class="nav-link " href="Menu.html" role="button">
+                                                Menu
+                                            </a>
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown"></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#Thucuong">Thức uống</a></li>
+                                                <li><a class="dropdown-item" href="#doannhe">Bánh ngọt</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item px-4 py-2" aria-current="page" href="#">
+                                            <a class="nav-link" href="News.html">Tin tức</a>
+                                        </li>
+                                        <li class="nav-item px-4 py-2" aria-current="page" href="#">
+                                            <a class="nav-link" href="contact.html">Liên hệ</a>
+                                        </li>
+                                    </ul>
+                                    <div class="socnet">
+                                        <li class="nav-item px-4 py-2">
+                                            <span class="fs-2 px-1">
+                                                <i class="fa-brands fa-twitter" style="color: #1f93d6;"></i>
+                                            </span>
+                                            <span class="fs-2  px-1">
+                                                <i class="fa-brands fa-facebook" style="color: #1f93d6;;"></i>
+                                            </span>
+                                            <span class="fs-2  px-1 ">
+                                                <i class="fa-brands fa-telegram" style="color: #3c7cec;"></i>
+                                            </span>
+                                        </li>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </nav>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="banner py-5">
+        <h1 class="mx-auto px-5">GIỚI THIỆU</h1>
+        <p class="mx-auto px-5">Good Tea - Great Taste</p>
+    </div>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb ">
+            <li class="breadcrumb-item active text-white  p-2 mx-5" aria-current="page"> <i
+                    class="fa-solid fa-house"></i> &nbsp; GIỚI THIỆU</li>
+        </ol>
+    </nav>
+
     <div class="container">
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="ct1">
-                        <div>
-                            <h1 style="color:rgb(143, 40, 40);"> CÂU CHUYỆN THƯƠNG HIỆU</h1>
-                            <p>Tên gọi Gong Cha xuất phát từ ý nghĩa trong tiếng Hoa là Trà cung đình. Thời xưa, các
-                                loại trà tốt nhất thường được các vị hoàng thân quý tộc ngự dùng. Ngày nay, Gong Cha
-                                mong muốn phục vụ các loại trà tốt nhất cho thực khách, cũng như chính tên gọi của
-                                thương hiệu. Kể từ khi được thành lập vào năm 2006 tại Đài Loan, chuỗi cửa hàng Gong Cha
-                                đã mở rộng trên khắp 19 quốc gia với 1.500 cửa hàng và con số này vẫn tiếp tục tăng
-                                trưởng không ngừng. Qua nhiều năm nỗ lực phát triển, Gong Cha đã trở nên phổ biến với
-                                khách hàng từ nhiều quốc gia và trở thành một trong những thương hiệu trà đáng tin cậy
-                                hàng đầu trên thế giới.</p>
-
-                        </div>
-                        <div class="lytra">
-                            <img src="../img/Info/lytra.jfif" class="float-end">
-                        </div>
-
-                    </div>
-                </div>
+        <div class="row my-5">
+            <div class=" col-md-9 col-12">
+                <h1 style="color:rgb(143, 40, 40);"> CÂU CHUYỆN THƯƠNG HIỆU</h1>
+                <p>Tên gọi Tea Milk xuất phát từ ý nghĩa trong tiếng Hoa là Trà cung đình. Thời xưa, các
+                    loại trà tốt nhất thường được các vị hoàng thân quý tộc ngự dùng. Ngày nay, Tea Milk
+                    mong muốn phục vụ các loại trà tốt nhất cho thực khách, cũng như chính tên gọi của
+                    thương hiệu. Kể từ khi được thành lập vào năm 2006 tại Đài Loan, chuỗi cửa hàng Tea Milk
+                    đã mở rộng trên khắp 19 quốc gia với 1.500 cửa hàng và con số này vẫn tiếp tục tăng
+                    trưởng không ngừng. Qua nhiều năm nỗ lực phát triển, Tea Milk đã trở nên phổ biến với
+                    khách hàng từ nhiều quốc gia và trở thành một trong những thương hiệu trà đáng tin cậy
+                    hàng đầu trên thế giới.</p>
+            </div>
+            <div class=" col-md-3 col-12">
+                <img src="../img/Info/lytra.jfif" class="img-fluid">
             </div>
 
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1 style="color:rgb(143, 40, 40);"> GONG CHA VIỆT NAM</h1>
-                    <div class="ct2">
-
-                        <div>
-
-                            <p>Tên gọi Gong Cha xuất phát từ ý nghĩa trong tiếng Hoa là Trà cung đình. Thời xưa, các
-                                loại trà tốt nhất thường được các vị hoàng thân quý tộc ngự dùng. Ngày nay, Gong Cha
-                                mong muốn phục vụ các loại trà tốt nhất cho thực khách, cũng như chính tên gọi của
-                                thương hiệu. Kể từ khi được thành lập vào năm 2006 tại Đài Loan, chuỗi cửa hàng Gong Cha
-                                đã mở rộng trên khắp 19 quốc gia với 1.500 cửa hàng và con số này vẫn tiếp tục tăng
-                                trưởng không ngừng. Qua nhiều năm nỗ lực phát triển, Gong Cha đã trở nên phổ biến với
-                                khách hàng từ nhiều quốc gia và trở thành một trong những thương hiệu trà đáng tin cậy
-                                hàng đầu trên thế giới.</p>
-                        </div>
-                        <div class="anh2">
-                            <img src="../img/Info/anh2.png" alt="" width="350px">
-                        </div>
+        </div>
 
 
-                    </div>
-                </div>
+        <div class="row my-5">
+            <h1 style="color:rgb(143, 40, 40);"> TEAMILK VIỆT NAM</h1>
+            <div class=" col-md-6 col-12">
+
+                <p>Tên gọi Tea Milk xuất phát từ ý nghĩa trong tiếng Hoa là Trà cung đình. Thời xưa, các
+                    loại trà tốt nhất thường được các vị hoàng thân quý tộc ngự dùng. Ngày nay, Tea Milk
+                    mong muốn phục vụ các loại trà tốt nhất cho thực khách, cũng như chính tên gọi của
+                    thương hiệu. Kể từ khi được thành lập vào năm 2006 tại Đài Loan, chuỗi cửa hàng Tea Milk
+                    đã mở rộng trên khắp 19 quốc gia với 1.500 cửa hàng và con số này vẫn tiếp tục tăng
+                    trưởng không ngừng. Qua nhiều năm nỗ lực phát triển, Tea Milk đã trở nên phổ biến với
+                    khách hàng từ nhiều quốc gia và trở thành một trong những thương hiệu trà đáng tin cậy
+                    hàng đầu trên thế giới.</p>
             </div>
-            <div class="noidung">
-                <h1 style="color: rgb(143, 40, 40); text-align:center">GIÁ TRỊ CỐT LÕI</h1>
-                <div class="row">
-
-                    <div class="col-md-4">
-                        <div class="header-content">
-                            <img src="../img/Info/icon1.png" alt="" class=".img-thumbnail rounded mx-auto d-block">
-                        </div>
-                        <div class="ct4">
-                            <h4 style="color: rgb(143, 40, 40);"> 1.CHẤT LƯỢNG HÀNG ĐẦU</h4>
-                            <p>An toàn, vệ sinh và ngon miệng. Việc sử dụng các nguyên liệu an toàn, tự nhiên và vệ sinh
-                                là ưu tiên hàng đầu của Gong Cha. Hương vị tuyệt hảo của các món thức uống là mục đích
-                                quan
-                                trọng tiếp theo mà chúng tôi muốn hướng đến.</p>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-4">
-
-                        <img src="../img/Info/icon2.png" alt="" class=".img-thumbnail rounded mx-auto d-block">
-                        <div class="ct4">
-                            <h4 style="color: rgb(143, 40, 40);">2. DỊCH VỤ THÂN THIỆN & CHUYÊN NGHIỆP</h4>
-                            <p>Gong Cha mong muốn làm hài lòng khách hàng tốt nhất với tác phong phục vụ chuyên nghiệp
-                                và thân thiện, luôn lắng nghe những đóng góp của khách hàng.</p>
-                        </div>
-
-                    </div>
-
-                    <div class="col-sm-4">
-
-                        <img src="../img/Info/icon3.png" alt="" class=".img-thumbnail rounded mx-auto d-block">
-                        <div class="ct4">
-                            <h4 style="color: rgb(143, 40, 40);"> 3. THƯƠNG HIỆU ĐÁNG TIN CẬY</h4>
-                            <p>Dựa trên hai nền tảng cốt lõi là Chất Lượng và Dịch Vụ, Gong Cha luôn nỗ lực xây dựng và
-                                duy trì hình ảnh thương hiệu đáng tin cậy trong mắt khách hàng.</p>
-                        </div>
-
-                    </div>
-
-
-
-
-
-                </div>
+            <div class=" col-md-6 col-12">
+                <img src="../img/Info/anh2.png" class="img-fluid">
             </div>
-
-            <footer>
-                <div class="row" style="background-color: gray;">
-                    <div class="col-4">
-                        <img src="../img/Info/gongcha.png" alt="" width="100%">
-                    </div>
-
-                    <div class="col-8">
-                        <nav class="nav nav-tabs">
-                            <a href="#" class="nav-item nav-link active">Trang Chủ</a>
-                            <a href="#" class="nav-item nav-link active">Giới Thiệu</a>
-                            <a href="#" class="nav-item nav-link active">Sản Phẩm</a>
-                            <a href="#" class="nav-item nav-link active">Hỏi Đáp</a>
-                            <a href="#" class="nav-item nav-link active">Tư Vấn</a>
-                            <a href="#" class="nav-item nav-link active">Giỏ Hàng</a>
-                        </nav>
-
-
-                        <div class="box11">
-                            <a href="#" style="color: rgb(143, 40, 40);">Gmail: gongcha@gmail.com</a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </footer>
-
-
-
 
         </div>
 
 
 
+    </div>
+    <div class="noidung my-5">
+        <div class="header-content py-2">
+            <h1 style="color: rgb(143, 40, 40); text-align:center">GIÁ TRỊ CỐT LÕI</h1>
 
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 col-12">
+                <div class="header-content">
+                    <img src="../img/Info/icon1.png" alt="" class=".img-thumbnail rounded mx-auto d-block">
+                </div>
+                <div class="ct4">
+                    <h4 style="color: rgb(143, 40, 40);"> 1. CHẤT LƯỢNG HÀNG ĐẦU</h4>
+                    <p>An toàn, vệ sinh và ngon miệng. Việc sử dụng các nguyên liệu an toàn, tự nhiên và vệ sinh
+                        là ưu tiên hàng đầu của Gong Cha. Hương vị tuyệt hảo của các món thức uống là mục đích
+                        quan
+                        trọng tiếp theo mà chúng tôi muốn hướng đến.</p>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-12">
+
+                <img src="../img/Info/icon2.png" alt="" class=".img-thumbnail rounded mx-auto d-block">
+                <div class="ct4">
+                    <h4 style="color: rgb(143, 40, 40);">2. DỊCH VỤ THÂN THIỆN & CHUYÊN NGHIỆP</h4>
+                    <p>Gong Cha mong muốn làm hài lòng khách hàng tốt nhất với tác phong phục vụ chuyên nghiệp
+                        và thân thiện, luôn lắng nghe những đóng góp của khách hàng.</p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 col-12">
+
+                <img src="../img/Info/icon3.png" alt="" class=".img-thumbnail rounded mx-auto d-block">
+                <div class="ct4">
+                    <h4 style="color: rgb(143, 40, 40);"> 3. THƯƠNG HIỆU ĐÁNG TIN CẬY</h4>
+                    <p>Dựa trên hai nền tảng cốt lõi là Chất Lượng và Dịch Vụ, Gong Cha luôn nỗ lực xây dựng và
+                        duy trì hình ảnh thương hiệu đáng tin cậy trong mắt khách hàng.</p>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-4 col-12 p-2">
+                <p class="h2">TeaMilk</p>
+                <p>COPYRIGHT © 2023 TEA MILK VIỆT NAM</p>
+            </div>
+            <div class="col-md-8 col-12 p-2">
+                <ul>
+                    <li>
+                        Trụ sở chính: Công ty Cổ Phần TeaMilk - ĐKKD: 9999 19919 do sở KHĐT TPHCM cấp lần
+                        đầu
+                        ngày 21/05/202x
+                    </li>
+                    <li>
+                        Địa chỉ: Phòng 7x0, Tầng 199, Tòa nhà Central Plaza, số 10 Lê Duẩn, phường Bến Nghé, quận 1, Hồ
+                        Chí Minh
+                    </li>
+                    <li>
+                        Điện thoại: 1900 000 999 (Ext.9999/ 9999)
+                    </li>
+                    <li>
+                        Fax: (099) 9999 9999
+                    </li>
+                    <li>
+                        Email: sales@teamilk.masangroup.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Giỏ hàng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="fs-5 my-3">Trà sữa hoàng kim</p>
+                            </td>
+                            <td>
+                                <p class="my-3 gia">50.000 VNĐ</p>
+                            </td>
+                            <td>
+                                <input type="number" name="" class="my-3 soluong" value="1"
+                                    onblur="calculateTotal(this)">
+                            </td>
+                            <td>
+                                <p class="my-3 thanhtien"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="fs-5 my-3">Trà sữa sương sáo</p>
+                            </td>
+                            <td>
+                                <p class="my-3 gia">45.000 VNĐ</p>
+                            </td>
+                            <td>
+                                <input type="number" name="" class="my-3 soluong" value="1"
+                                    onblur="calculateTotal(this)">
+                            </td>
+                            <td>
+                                <p class="my-3 thanhtien"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="fs-5 my-3">Tiramisu</p>
+                            </td>
+                            <td>
+                                <p class="my-3 gia">30.000 VNĐ</p>
+                            </td>
+                            <td>
+                                <input type="number" name="" class="my-3 soluong" value="1"
+                                    onblur="calculateTotal(this)">
+                            </td>
+                            <td>
+                                <p class="my-3 thanhtien"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="h5">Tổng thanh toán</td>
+                            <td id="totalAmount"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" type="button" onclick="dathang()">Đặt
+                        hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const name = localStorage.getItem("NameTT");
+
+        var nameArray = name.split(' ');
+        var firstName = nameArray[nameArray.length - 1];
+
+
+        const TTDN = localStorage.getItem("trangthaiDN");
+        if (TTDN == "True") {
+            document.getElementById("Dangnhap").textContent = firstName;
+            const taikhoan = document.querySelector("#taikhoan");
+            taikhoan.href = "thongtin.html";
+            var cart = document.querySelector('#giohang');
+            cart.setAttribute('data-bs-target', '#cartModal');
+
+        }
+
+        function calculateTotal(input) {
+            var giaElement = input.parentElement.previousElementSibling.querySelector(".gia");
+            var thanhtienElement = input.parentElement.nextElementSibling.querySelector(".thanhtien");
+
+            var gia = parseFloat(giaElement.textContent.replace(/[^\d]/g, ''));
+            var soluong = input.value;
+            var thanhtienValue = gia * soluong;
+            var thanhtienFormatted = thanhtienValue.toLocaleString();
+            thanhtienElement.textContent = thanhtienFormatted + " VNĐ";
+            var totalAmount = calculateTotalAmount();
+            document.getElementById("totalAmount").textContent = totalAmount.toLocaleString() + " VNĐ";
+        }
+
+        function calculateTotalAmount() {
+            var totalAmount = 0;
+            document.querySelectorAll(".soluong").forEach(function (input) {
+                var giaElement = input.parentElement.previousElementSibling.querySelector(".gia");
+                var soluong = input.value;
+                var gia = parseFloat(giaElement.textContent.replace(/[^\d]/g, ''));
+                var subtotal = gia * soluong;
+                totalAmount += subtotal;
+            });
+
+            return totalAmount;
+        }
+
+        document.querySelectorAll(".soluong").forEach(function (input) {
+            calculateTotal(input);
+        });
+
+        document.querySelectorAll(".soluong").forEach(function (input) {
+            input.addEventListener("input", function () {
+                calculateTotal(input);
+            });
+        });
+
+        function dathang() {
+            window.location.href = "thanhtoan.html";
+        }
+
+        function ttgiohang() {
+            var cart = document.querySelector('#giohang');
+            ttgh = cart.getAttribute('data-bs-target');
+            if(ttgh == "#"){
+                alert("Vui lòng đăng nhập để sử dụng tính năng!!!");
+            }
+        }
+    </script>
 </body>
 
 </html>

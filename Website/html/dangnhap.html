@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="shortcut icon" type="image/png" href="../img/Logo/Logo1.png" />
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.min.css">
+    <style>
+        body{
+            background-image: url(../img/Dangnhap/pngtree-matcha-green-tea-gap-background-illustration-picture-image_1432764.jpg);
+        }
+        .container{
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container p-5 my-5 border" id="account-info">
+        <h1 style="text-align: center;">THÔNG TIN ĐĂNG NHẬP</h1>
+        <div class="row">
+            <form action="/action_page.php" id="loginForm" onsubmit="loginUser(event)">
+                <div class="form-floating mt-3 mb-3">
+                    <input class="form-control" type="tel" id="loginPhone" required placeholder="Số điện thoại"><br>
+                    <label for="loginPhone">Số điện thoại:</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <input class="form-control" type="password" id="loginPassword" required placeholder="Mật khẩu"><br>
+                    <label for="loginPassword">Mật khẩu:</label>
+                </div>
+                <div class="form-check mt-3 mb-3">
+                    <input class="form-check-input" type="checkbox" id="rememberMe" onclick="togglePasswordVisibility()">    
+                    <label class="form-check-label" for="rememberMe" >Hiện mật khẩu</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <span><a style="text-decoration:none ;" href="#">Quên mật
+                            khẩu?</a></span>
+                </div>
+                <div style="text-align: center;">
+                    <a href="dangky.html"><input class="btn btn-danger" type="button" value="Đăng ký"></a>
+                    <input class="btn btn-success" type="submit" value="Đăng nhập">
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                    <span>Hoặc</span>
+                    <i class="fa-brands fa-square-facebook fa-2xl"></i>
+                    <i class="fa-brands fa-square-google-plus fa-2xl"></i>
+                    <i class="fa-brands fa-square-twitter fa-2xl"></i>
+                    <i class="fa-brands fa-square-instagram fa-2xl"></i>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="text-center">
+        <span>@ 2023 Classy Login Form. All right reserved | Design By PhuHoang</span>
+    </div>
+    <script>
+        function loginUser(event) {
+            event.preventDefault();
+            const loginPhone = document.getElementById('loginPhone').value;
+            const loginPassword = document.getElementById('loginPassword').value;
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            const user = users.find(u => u.phone === loginPhone && u.password === loginPassword);
+            if (user) {
+                var TTDN = "True";
+                localStorage.setItem("trangthaiDN", TTDN);
+                alert('Đăng nhập thành công! Ấn OK để chuyển sang trang chính nè');
+                
+                window.location.href = "Menu.html";
+                
+            } else {
+                alert('Thông tin đăng nhập không đúng. Vui lòng thử lại!');
+                var TTDN = "False";
+                localStorage.setItem("trangthaiDN", TTDN);
+            }
+            
+        }
+
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("loginPassword");
+            passwordInput.type = document.getElementById("rememberMe").checked ? "text" : "password";
+        }
+
+        
+
+    </script>
+</body>
+</html>
