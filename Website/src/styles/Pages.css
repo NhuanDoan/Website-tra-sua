@@ -1,0 +1,78 @@
+.contentPage {
+  width: min(100% - 2rem, 72rem);
+  flex: 1;
+  align-self: center;
+  margin: clamp(2rem, 6vw, 5rem) auto;
+}
+
+.pageIntro { max-width: 48rem; margin: 0 auto 2.5rem; text-align: center; }
+.pageEyebrow { margin: 0 0 0.75rem; color: var(--color-accent-matcha); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.16em; }
+.pageIntro h1 { margin: 0; color: var(--color-brand-primary); font-size: clamp(2.25rem, 6vw, 4rem); letter-spacing: -0.06em; line-height: 1.1; }
+.pageIntro > p:last-child { margin: 1rem auto 0; color: var(--color-text-muted); font-size: 1.05rem; }
+.statusPanel,
+.formCard,
+.accountCard {
+  width: min(100%, 48rem);
+  margin: 0 auto;
+  border: 1px solid var(--color-border);
+  border-radius: 1.25rem;
+  padding: clamp(1.5rem, 5vw, 3rem);
+  background: var(--color-white);
+  box-shadow: 0 1.25rem 3rem rgb(48 40 32 / 6%);
+}
+.formCard { animation: content-arrive 520ms cubic-bezier(.2,.7,.25,1) both; }
+.authForm { width: min(100%, 34rem); }
+.authForm > .primaryButton,
+.authForm > .primaryButtonLink { display: flex; width: min(100%, 18rem); margin: .65rem auto 0; }
+.authForm .formSwitch { text-align: center; }
+.statusPanel { display: flex; align-items: flex-start; gap: 1.25rem; }
+.brandLogo { display: block; width: min(100%, 15rem); height: auto; }
+.statusPanel h2,
+.accountCard h2 { margin: 0; color: var(--color-text); font-size: clamp(1.35rem, 3vw, 1.8rem); letter-spacing: -0.035em; }
+.statusPanel p { margin: 0.75rem 0 1.25rem; color: var(--color-text-muted); }
+.statusMark { display: grid; width: 2.75rem; flex: 0 0 2.75rem; aspect-ratio: 1; place-items: center; border-radius: 50%; background: var(--color-surface-warm); color: var(--color-brand-primary); font-family: var(--font-display); font-weight: 800; }
+.textAction { color: var(--color-brand-primary); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 0.25em; }
+.primaryButton,
+.primaryButtonLink { display: inline-flex; min-height: 3.25rem; align-items: center; justify-content: center; border: 1px solid var(--color-brand-primary); border-radius: 999px; padding: 0.75rem 1.4rem; background: var(--color-brand-primary); color: var(--color-white); cursor: pointer; font: inherit; font-weight: 700; text-decoration: none; }
+.primaryButton:hover,
+.primaryButtonLink:hover { border-color: var(--color-brand-hover); background: var(--color-brand-hover); color: var(--color-on-brand-hover); }
+.primaryButton,
+.primaryButtonLink,
+.secondaryButton { transition: transform 170ms ease, box-shadow 170ms ease, background-color 170ms ease, border-color 170ms ease; }
+.primaryButton:hover,
+.primaryButtonLink:hover { transform: translateY(-2px); box-shadow: 0 .55rem 1rem rgb(94 41 25 / 15%); }
+.secondaryButton { display: inline-flex; min-height: 2.8rem; align-items: center; justify-content: center; border: 1px solid var(--color-border); border-radius: 999px; padding: 0.65rem 1.15rem; background: transparent; color: var(--color-text); cursor: pointer; font: inherit; font-weight: 650; }
+.secondaryButton:hover { border-color: var(--color-accent-matcha); background: #edf0e7; color: #3f4d33; }
+.demoNotice { margin: 0 0 1.5rem; border-left: 3px solid var(--color-accent-matcha); padding: 0.75rem 1rem; background: #f7f8f2; color: var(--color-text-muted); font-size: 0.92rem; }
+.field { display: grid; gap: 0.45rem; margin-bottom: 1.15rem; color: var(--color-text); font-size: 0.92rem; font-weight: 650; }
+.field input,
+.field textarea,
+.field select { width: 100%; min-height: 3rem; border: 1px solid #b9afa2; border-radius: 0.65rem; padding: 0.7rem 0.85rem; background: var(--color-white); color: var(--color-text); }
+.field input:focus-visible,
+.field textarea:focus-visible,
+.field select:focus-visible { outline: 3px solid rgb(154 60 34 / 24%); border-color: var(--color-brand-primary); }
+.checkboxField { display: inline-flex; align-items: center; gap: 0.65rem; margin: 0.1rem 0 1.25rem; color: var(--color-text-muted); font-size: 0.9rem; }
+.checkboxField input { width: 1.1rem; height: 1.1rem; accent-color: var(--color-brand-primary); }
+.formFeedback { margin: 0 0 1rem; color: var(--color-brand-primary); font-weight: 650; }
+.formSwitch { margin: 1.25rem 0 0; color: var(--color-text-muted); text-align: center; }
+.formSwitch a { color: var(--color-brand-primary); font-weight: 700; }
+.accountDetails { display: grid; gap: 0; margin: 1.5rem 0; border-top: 1px solid var(--color-border); }
+.accountDetails div { display: grid; grid-template-columns: minmax(8rem, 0.6fr) 1fr; gap: 1rem; border-bottom: 1px solid var(--color-border); padding: 0.9rem 0; }
+.accountDetails dt { color: var(--color-text-muted); }
+.accountDetails dd { margin: 0; font-weight: 650; overflow-wrap: anywhere; }
+.accountNav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.accountNav a { color: var(--color-brand-primary); font-weight: 700; }
+
+@media (max-width: 600px) {
+  .contentPage { width: min(100% - 1.25rem, 72rem); margin-block: 2rem; }
+  .pageIntro { margin-bottom: 1.5rem; text-align: left; }
+  .statusPanel { flex-direction: column; }
+  .accountDetails div { grid-template-columns: 1fr; gap: 0.25rem; }
+  .accountNav { align-items: flex-start; flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .formCard { animation: none; }
+  .primaryButton, .primaryButtonLink, .secondaryButton { transition: none; }
+  .primaryButton:hover, .primaryButtonLink:hover { transform: none; box-shadow: none; }
+}
